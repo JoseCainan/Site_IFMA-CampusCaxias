@@ -162,7 +162,7 @@ header {
 }
 
 .secao-fundo{
-    height: 150vh;
+    height: 200vh;
     background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-textura-de-aquarela-verde-suave-moderna_1055-18276.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -345,7 +345,10 @@ header {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-image: url("fundo_photoshop03.jpg");
+    background-image: url("/imagens_site/fundo_photoshop03.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     padding: 20px 15px;
 }
 
@@ -357,8 +360,8 @@ header {
 
 .slider {
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 600px;
+    height: 300px;
     border-radius: 15px;
     box-shadow: 0 0 7px 5px #74a509;
     overflow: hidden;
@@ -386,7 +389,7 @@ header {
 
 .manual-navegation {
     position: absolute;
-    width: 800px;
+    width: 300px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -503,7 +506,7 @@ header {
 /* seçao da responsividade */
 @media(max-width: 1020px){
     .secao-fundo{
-        height: 160vh;
+        height: 180vh;
     }
     
     .secao-fundo {
@@ -545,11 +548,44 @@ header {
     }
 }
 
-@media(max-width: 770px){
+@media(max-width: 771px){
 
     .hamburguer {
         display: block;
         z-index: 1;
+    }
+
+    .secao-fundo{
+        height: 195vh;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-convidado{
+        max-width: 650px;
+    }
+    
+    .foto_ifma img{
+        width: 600px;
+        height: 350px;  
+    }
+
+    .slider {
+        width: 400px;
+        height: 200px;
+    }
+
+    .navegation-auto {
+        width: 400px;
+        margin-top: 160px; 
+    }
+
+    .manual-navegation {
+        width: 400px;
+        margin-top: -20px;
     }
 
     .nav-list {
@@ -574,36 +610,6 @@ header {
         pointer-events: all;
     }
 
-
-    .secao-fundo{
-        height: 150vh;
-    }
-
-    .container{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .foto_ifma img{
-        width: 600px;
-        height: 350px;  
-    }
-
-    .slider {
-        width: 400px;
-        height: 200px;
-    }
-
-    .navegation-auto {
-        width: 400px;
-        margin-top: 160px; 
-    }
-
-    .manual-navegation {
-        width: 400px;
-        margin-top: -20px;
-    }
-    
 }
 
 @media(max-width: 480px){
@@ -652,7 +658,6 @@ header {
         height: 145vh;
     }
 
-    
     .data {
         display: flex;
         align-items: center;
